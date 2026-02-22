@@ -1,0 +1,166 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#0e1116;
+  color:#f5f7fa;
+  line-height:1.7;
+  letter-spacing:0.2px;
+}
+
+.container{
+  width:90%;
+  max-width:1150px;
+  margin:auto;
+}
+
+header{
+  padding:20px 0;
+  border-bottom:1px solid #1b1f26;
+  position:sticky;
+  top:0;
+  background:#0e1116;
+  z-index:1000;
+}
+
+.logo{
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+nav{
+  float:right;
+}
+
+nav a{
+  text-decoration:none;
+  color:#a0a6ad;
+  margin-left:28px;
+  font-size:14px;
+  transition:0.3s ease;
+}
+
+nav a:hover{
+  color:#d4af37;
+}
+
+.hero{
+  padding:150px 0 120px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:20px;
+  font-weight:700;
+}
+
+.hero p{
+  max-width:700px;
+  margin:0 auto 35px;
+  color:#9aa0a6;
+}
+
+.section{
+  padding:110px 0;
+  border-top:1px solid #1b1f26;
+}
+
+.section h2{
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+.section p{
+  color:#9aa0a6;
+  max-width:750px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.card{
+  background:#161b22;
+  padding:30px;
+  border-radius:14px;
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.btn{
+  padding:14px 30px;
+  border-radius:10px;
+  font-size:14px;
+  text-decoration:none;
+  display:inline-block;
+  margin:6px 0;
+}
+
+.primary{
+  background:#d4af37;
+  color:#000;
+  font-weight:600;
+}
+
+.primary:hover{
+  background:#c6a232;
+}
+
+.secondary{
+  border:1px solid #d4af37;
+  color:#d4af37;
+}
+
+.secondary:hover{
+  background:#d4af37;
+  color:#000;
+}
+
+.verdict{
+  margin-top:40px;
+  padding:30px;
+  background:#161b22;
+  border-radius:14px;
+  border-left:4px solid #d4af37;
+}
+
+footer{
+  padding:60px 0;
+  text-align:center;
+  color:#6e7681;
+  border-top:1px solid #1b1f26;
+  font-size:13px;
+}
+
+form input, form textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:18px;
+  border:none;
+  border-radius:10px;
+  background:#1f2630;
+  color:#fff;
+}
+
+form input:focus, form textarea:focus{
+  outline:1px solid #d4af37;
+}
+
+@media(max-width:768px){
+  nav{
+    float:none;
+    text-align:center;
+    margin-top:15px;
+  }
+  .hero h1{
+    font-size:30px;
+  }
+}
