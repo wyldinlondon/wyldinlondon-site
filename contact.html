@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact WYLD in London | Pub & Café Reviews</title>
-<meta name="description" content="Contact WYLD in London for pub reviews, café visits, collaborations and London pub features.">
+<title>Contact WYLD in London</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -13,58 +11,37 @@
 
 body{
   font-family:'Inter',sans-serif;
-  background:linear-gradient(180deg,#0b0f1a,#111827);
-  color:#f5f7fa;
-  line-height:1.7;
-  overflow-x:hidden;
+  background:linear-gradient(180deg,#0f172a,#0b1120);
+  color:#ffffff;
+  min-height:100vh;
 }
 
 .container{
   width:90%;
-  max-width:900px;
+  max-width:800px;
   margin:auto;
 }
 
 header{
-  padding:22px 0;
-  border-bottom:1px solid rgba(255,255,255,0.05);
-  background:rgba(11,15,26,0.95);
-  position:sticky;
-  top:0;
-  backdrop-filter:blur(10px);
+  padding:25px 0;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
 .logo{
+  font-size:22px;
   font-weight:700;
-  font-size:20px;
   color:#d4af37;
   letter-spacing:1px;
 }
 
-nav{
-  float:right;
-}
-
-nav a{
-  text-decoration:none;
-  color:#cbd5e1;
-  margin-left:28px;
-  font-size:14px;
-  transition:0.3s;
-}
-
-nav a:hover{
-  color:#d4af37;
-}
-
 .section{
-  padding:140px 0;
+  padding:100px 0;
   text-align:center;
-  animation:fadeUp 1s ease forwards;
 }
 
 .section h1{
-  font-size:40px;
+  font-size:36px;
   margin-bottom:20px;
   background:linear-gradient(90deg,#d4af37,#facc15);
   -webkit-background-clip:text;
@@ -72,16 +49,17 @@ nav a:hover{
 }
 
 .section p{
-  margin-bottom:40px;
   color:#cbd5e1;
+  margin-bottom:40px;
 }
 
 form{
-  background:#172033;
-  padding:45px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  padding:40px;
   border-radius:20px;
-  border:1px solid rgba(212,175,55,0.4);
-  box-shadow:0 20px 50px rgba(0,0,0,0.7);
+  border:2px solid #d4af37;
+  box-shadow:0 25px 60px rgba(0,0,0,0.7);
   text-align:left;
 }
 
@@ -89,29 +67,35 @@ form input,
 form textarea{
   width:100%;
   padding:16px;
-  margin-bottom:22px;
+  margin-bottom:20px;
   border-radius:12px;
-  border:1px solid rgba(255,255,255,0.1);
-  background:#0f172a;
-  color:#fff;
-  font-size:14px;
-  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.3);
+  background:rgba(255,255,255,0.1);
+  color:#ffffff;
+  font-size:15px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+  color:#e2e8f0;
 }
 
 form input:focus,
 form textarea:focus{
-  border:1px solid #d4af37;
-  box-shadow:0 0 15px rgba(212,175,55,0.6);
   outline:none;
+  border:1px solid #facc15;
+  box-shadow:0 0 15px rgba(250,204,21,0.6);
 }
 
 button{
-  padding:15px 35px;
+  width:100%;
+  padding:16px;
   border:none;
   border-radius:12px;
   background:#d4af37;
   color:#000;
-  font-weight:600;
+  font-weight:700;
+  font-size:15px;
   cursor:pointer;
   transition:0.3s ease;
 }
@@ -119,36 +103,24 @@ button{
 button:hover{
   background:#facc15;
   transform:translateY(-3px);
-  box-shadow:0 10px 25px rgba(212,175,55,0.4);
 }
 
 .success-message{
   display:none;
-  background:#16a34a;
+  margin-top:20px;
   padding:15px;
   border-radius:12px;
-  margin-top:20px;
+  background:#16a34a;
+  color:#fff;
   text-align:center;
   font-weight:600;
-  color:#fff;
 }
 
 footer{
-  padding:60px 0;
+  margin-top:80px;
+  padding:40px 0;
   text-align:center;
-  background:#0b0f1a;
   color:#94a3b8;
-  margin-top:100px;
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(40px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-@media(max-width:768px){
-  nav{float:none;text-align:center;margin-top:15px;}
-  .section h1{font-size:28px;}
 }
 </style>
 </head>
@@ -157,19 +129,13 @@ footer{
 
 <header>
 <div class="container">
-<span class="logo">WYLD in London</span>
-<nav>
-<a href="index.html">Home</a>
-<a href="pubs.html">Pubs</a>
-<a href="cafes.html">Cafés</a>
-<a href="about.html">About</a>
-</nav>
-<div style="clear:both;"></div>
+<div class="logo">WYLD in London</div>
 </div>
 </header>
 
 <section class="section">
 <div class="container">
+
 <h1>Contact WYLD in London</h1>
 <p>Own a pub or café in London? Want us to visit? Interested in collaborating? Send us a message below.</p>
 
@@ -194,7 +160,7 @@ Message sent successfully. We’ll be in touch soon.
 
 <footer>
 <div class="container">
-<p>© 2026 WYLD in London | WYLDinLondon.co.uk</p>
+© 2026 WYLD in London | WYLDinLondon.co.uk
 </div>
 </footer>
 
