@@ -2,53 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Contact WYLD in London</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact | WYLD in London</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script defer src="translations.js"></script>
 </head>
 
 <body>
 
 <header>
-  <a href="index.html" class="logo">
-    <img src="logo.jpg" alt="WYLD in London Logo">
-  </a>
+<div class="container">
+<span class="logo">WYLD in London</span>
 
-  <nav>
-    <a href="index.html" data-translate="home">Home</a>
-    <a href="contact.html" data-translate="contact">Contact</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
 
-  <select id="languageSwitcher">
-    <option value="en">English</option>
-    <option value="it">Italian</option>
-    <option value="es">Spanish</option>
-    <option value="fr">French</option>
-    <option value="de">German</option>
-    <option value="zh">Chinese</option>
-    <option value="ja">Japanese</option>
-  </select>
+<select id="languageSwitcher">
+  <option value="en">English</option>
+  <option value="it">Italiano</option>
+  <option value="es">Español</option>
+  <option value="fr">Français</option>
+  <option value="de">Deutsch</option>
+  <option value="zh">中文</option>
+  <option value="ja">日本語</option>
+</select>
+
+</nav>
+<div style="clear:both;"></div>
+</div>
 </header>
 
-<section class="contact-section">
-  <h1 data-translate="contactTitle">Work With Us</h1>
+<section class="section visible">
+<div class="container">
 
-  <form action="https://formsubmit.co/wyldinlondon.yt@post.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
+<h1 data-contact-title></h1>
+<p data-contact-desc></p>
 
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
+<form action="https://formsubmit.co/wyldinlondon.yt@post.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
 
-    <button type="submit">Send Message</button>
-  </form>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+<button type="submit" data-send-btn>Send Message</button>
+
+</form>
+
+</div>
 </section>
 
 <footer>
-  © 2026 WYLD in London
+<div class="container">
+© 2026 WYLD in London | WYLDinLondon.co.uk
+</div>
 </footer>
+
+<script src="translations.js"></script>
 
 </body>
 </html>
